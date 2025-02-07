@@ -79,7 +79,7 @@
     justify-content: space-between;
     margin: 4rem auto;
     position: sticky;
-    top: 2rem;
+    top: .5rem;
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;

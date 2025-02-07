@@ -163,10 +163,7 @@ nav{
 @media (max-width:900px) {
     nav{
     justify-content: space-between;
-    /* position: sticky;
-    top: .5rem;
     margin: .5rem auto;
-    box-shadow: .1rem .1rem 1rem #02324644; */
     }
     .navlinks, .btn_nav{
         display: none;

@@ -15,20 +15,20 @@ const Home = () => {
   const ProjectsRef = useRef(null);
   const NewsRef = useRef(null);
 
-  useEffect(() => {
-    ReviewRef.current.scrollBy({
-      left:
-        8 * parseFloat(getComputedStyle(document.documentElement).fontSize), // -10rem to pixels
-      behavior: "smooth",
-    });    
-    if (width < 450) {      
-      ProjectsRef.current.scrollBy({
-        left:
-          6 * parseFloat(getComputedStyle(document.documentElement).fontSize), // -10rem to pixels
-        behavior: "smooth",
-      });
-    }
-  }, [])
+  // useEffect(() => {
+  //   ReviewRef.current.scrollBy({
+  //     left:
+  //       8 * parseFloat(getComputedStyle(document.documentElement).fontSize), // -10rem to pixels
+  //     behavior: "smooth",
+  //   });    
+  //   if (width < 450) {      
+  //     ProjectsRef.current.scrollBy({
+  //       left:
+  //         6 * parseFloat(getComputedStyle(document.documentElement).fontSize), // -10rem to pixels
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // }, [])
   
   
   const nextSlide = (refname) => {
@@ -152,11 +152,11 @@ const Home = () => {
           className="next_pre_container"
           style={{ justifyContent: "center" }}
         >
-          <button onClick={() => prevSlide(ProjectsRef)} className="button3">
+          <button onClick={() => prevSlide(ProjectsRef)} className="button3" style={{padding:'0'}}>
             &#10094;
           </button>
           <button className="button2">Explore Our Success Stories</button>
-          <button onClick={() => nextSlide(ProjectsRef)} className="button1">
+          <button onClick={() => nextSlide(ProjectsRef)} className="button1" style={{padding:'0'}}>
             &#10095;
           </button>
         </div>
@@ -202,10 +202,10 @@ const Home = () => {
         >
           <h2 style={{color:'var(--c3)'}}>Get The Latest In Insight</h2>
           <div style={{display:'flex', gap:'.5rem'}}>
-          <button onClick={() => prevSlide(NewsRef)} className="button3">
+          <button onClick={() => prevSlide(NewsRef)} className="button3" style={{padding:'0'}}>
             &#10094;
           </button>
-          <button onClick={() => nextSlide(NewsRef)} className="button1">
+          <button onClick={() => nextSlide(NewsRef)} className="button1" style={{padding:'0'}}>
             &#10095;
           </button>
           </div>
