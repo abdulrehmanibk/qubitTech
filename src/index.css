@@ -1,0 +1,71 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    --c1: #023246;
+    --c2: #287194;
+    --c3: #F6F6F6;
+    --c4: #D3D4CE;
+  background-color: var(--c1)
+}
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button1{
+  background: linear-gradient(to right, var(--c2), var(--c1));
+  padding: .5rem clamp(1.2rem, 2vw, 1.5rem);
+  color: var(--c3);
+  font-size: 1rem;
+  transition: 0.2s;
+  border-radius: .7rem;
+  outline: none;
+  border: none;
+  /* margin: .5rem; */
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button3{
+  background: linear-gradient(to right, var(--c1), var(--c2));
+  padding: .5rem clamp(1.2rem, 2vw, 1.5rem);
+  color: var(--c3);
+  font-size: 1rem;
+  transition: 0.2s;
+  border-radius: .7rem;
+  outline: none;
+  border: none;
+  /* margin: .5rem; */
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button2{
+  background-color: var(--c3);
+  padding: .5rem clamp(1.2rem, 2vw, 1.5rem);
+  color: var(--c1);
+  font-size: 1.1rem;
+  transition: 0.2s;
+  border-radius: .7rem;
+  outline: none;
+  border: none;
+  /* margin: .5rem; */
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+.active{
+  color: var(--c1);
+}
+h1{
+  font-size: clamp(2rem, 3vw, 2.5rem);
+}

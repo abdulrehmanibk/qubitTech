@@ -1,0 +1,59 @@
+
+.contatct_container{
+    width: 95%;
+    margin: 10rem auto;
+    max-width: 80rem;
+    border: 0.1rem solid var(--c2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* height: 50rem; */
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+.input_container{
+display: flex;
+flex-direction: column;
+padding: .5rem;
+min-width: 15rem;
+flex: 1 1 15rem;
+
+}
+.input_container label{
+    color: var(--c3);
+    transform: translateY(-170%);
+    transition: .2s;
+}
+.input_container input, .input_container textarea{
+    transition: 0.2s;
+    color: var(--c4);
+    min-width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    /* border: 0.1rem solid ; */
+    border-bottom: 0.1rem solid var(--c4);
+    padding: .5rem;
+    height: 3rem;
+    resize: none; 
+
+
+}
+.input_container:nth-child(4){
+    min-width: 100%;
+}
+
+.input_container textarea{
+    min-height: 7rem;
+}
+.input_container input:focus-within + label{
+    color: green;
+    transform: translateY(-300%);
+
+}
+.input_container:last-child{
+    align-items: flex-start;
+}

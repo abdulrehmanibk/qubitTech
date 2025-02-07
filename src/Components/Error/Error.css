@@ -1,0 +1,42 @@
+/* ErrorPage.css */
+
+.error-container {
+    background-color: var(--c1) ;
+    color: #fff;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .error-title {
+    font-size: 6rem; /* Large font for "404" */
+    color: var(--c3); /* Accent color */
+    margin: 0;
+  }
+  
+  .error-message {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #fff; /* White text */
+  }
+  
+  .error-link {
+    font-size: 1rem;
+    color: var(--c3); /* Accent color for the link */
+    text-decoration: none; /* No underline */
+    border: 2px solid var(--c3);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .error-link:hover {
+    background-color: var(--c3); /* Button effect on hover */
+    color: var(--c1); /* Background becomes text color */
+  }
+  

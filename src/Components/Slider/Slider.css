@@ -1,0 +1,191 @@
+.wraper_container{
+    width: 95%;
+    height: auto;
+    max-height: 25rem;
+    max-width: 80rem;
+    margin: 0 auto; 
+    background-color: var(--c3);
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: flex-start;
+    border-radius: 1rem;
+    margin: 4rem auto;
+    overflow-y: auto;
+    /* padding: .5rem; */
+}
+.wraper{
+    gap: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    flex: 1 1 18rem; 
+    min-width: 18rem;  
+    background-color: var(--c4);
+    /* width: 20rem; */
+    height: 20rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding: 1rem;
+    color: var(--c1);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.item2{
+    width: 18rem;
+    height:30rem;
+    background-image:url('../../../public/images/qubit-app2.jpg');
+    box-shadow: inset 18rem 18rem 0 rgba(0, 0, 0, 0.2);
+    /* background-color: var(--c4); */
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.1s;
+    justify-content: space-between;
+}
+.item2:hover{
+    h1{
+        color: var(--c3);
+    }
+    box-shadow: 
+    inset 0px 9rem 18rem rgba(0, 0, 0, 0.5),  
+    inset 0px -9rem 18rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    .item2_p{
+        display:flex;
+    }
+
+}
+.item:first-child{
+    background-color: var(--c2);
+}
+.item:first-child h1{
+    color: var(--c3);
+}
+.item_link{
+    bottom: 1rem;
+    position: absolute;
+
+}
+
+.item h1 {
+    color: var(--c1);
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.item2 h1 {
+    color: var(--c3);
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.item2_p p{
+    margin: 0;
+    border: 0.1rem solid var(--c2);
+    border-radius: 1rem;
+    font-size: .8rem;
+    display: flex;
+    padding: .1rem .3rem;
+
+}
+.item2_p{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: .3rem;
+    /* border: 0.1rem solid wheat; */
+    justify-content: space-between;
+    /* display: none; */
+
+}
+.icon{
+    margin-bottom: 1rem;
+}
+.item ul {
+    list-style: none;
+}
+.next_pre_container{
+    width: 95%;
+    height: auto;
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+}
+.item3{
+    width: 25rem;
+    max-height:15rem;
+    background-color: var(--c3);
+    border-radius: .5rem;
+    display: flex;
+    border: 0.1rem solid green;
+
+}
+.item3_img{
+    width: 20%;
+    /* border: 0.1rem solid green; */
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.item3_img img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 0.1rem solid green;
+
+}
+.item3_content{
+    width: 80%;
+    /* border: 0.1rem solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: .5rem;
+}
+.item3_content p{
+    color: var(--c);
+}
+
+.item3_content span{
+    color: var(--c1);
+    font-size: .7rem;
+}
+.item3_content p:nth-child(2){
+    color: var(--c2);
+}
+.item4{
+    width: 25rem;
+    height:20rem;
+    background-color: var(--c3);
+    border-radius: .5rem;
+    display: flex;
+    border: 0.1rem solid green;
+    flex-wrap: wrap;
+    padding: .5rem;
+}
+
+.item4_img{
+    width: 100%;
+    height: 40%;
+    border-radius: .2rem;
+
+}
+.item4 p{
+    margin: 0;
+    color: var(--c2);
+}
+@media (max-width:500px) {
+    .demo{
+        width: 15rem;
+    }
+}

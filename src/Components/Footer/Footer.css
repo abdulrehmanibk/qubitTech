@@ -1,0 +1,125 @@
+
+.footer{
+    border: none;
+    width: 95%;
+    max-width: 80rem;
+    margin: 2rem auto; 
+    height: auto;
+    background:linear-gradient(to bottom, var(--c3), var(--c4));
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.footer_content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    align-items: flex-start;
+    justify-content: space-between;
+    row-gap: 1rem;
+    column-gap: 4rem;
+}
+.footer_intro{
+    /* border: 0.1rem solid black; */
+    color: var(--c1);
+    margin-bottom: 5rem;
+    width: 100%;
+}
+.footer_intro img{
+    width: 100%;
+    height: auto;
+}
+
+.footer_services ul, .footer_contact ul{
+    list-style: none;
+    align-items: left;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    padding: 1rem;
+    text-align: left;
+    height: 100%;
+    
+}
+.footer_services:last-child{
+    /* width: 22rem; */
+    flex: wrap;
+}
+.footer_services:last-child div{
+    /* width: 100%; */
+    /* justify-content: space-between; */
+    padding: .3rem;
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    background-color: var(--c3);
+    border-radius: 1rem;
+    gap: .2rem;
+    margin: .5rem 0;
+}
+input::placeholder {
+    color: gray;
+  }
+.footer_services:last-child input{
+    background-color: var(--c3);
+    outline: none;
+    border: none;
+    font-size: .8rem;
+    color: var(--c1);
+    padding: .5rem;
+}
+
+.footer_services{
+    /* width: 25; */
+    /* border: 0.1rem solid black; */
+    justify-content: flex-start;
+    display: flex;
+}
+.footer_contact ul li:nth-child(1), .footer_services ul li:nth-child(1){
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-family: var(--font1);
+    color: var(--c1);
+    font-weight: 600;
+    /* text-decoration:underline; */
+    
+}
+.footer_contact ul li, .footer_services ul li{
+    font-size: .8rem;
+    font-family: var(--font1);
+    color: var(--c1);
+    cursor: pointer;
+}
+/* .footer_contact ul li:hover, .footer_services ul li:hover{
+    text-shadow: .1rem .1rem 1rem black
+} */
+.footer_contact ul li i, .footer_services ul li i{
+    font-size: 1.2rem;
+}
+
+
+hr{
+    border: nones;
+    width: 90%;
+    margin-left: 5%;
+    border: 0.1rem solid var(--c3);
+    color: var(--c1);
+    height: 2px;
+}
+@media (max-width:900px) {
+    .footer_content{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .footer_intro{
+        align-self: center;
+    }
+}

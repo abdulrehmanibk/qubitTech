@@ -1,0 +1,43 @@
+.contact_heading{
+    width: 95%;
+    max-width: 80rem;
+    margin: 5rem auto;
+    color: var(--c3);
+}
+.contact_bottom{
+    background-color: var(--c3);
+    width: 95%;
+    max-width: 80rem;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.contact_bottom h1 {
+    color: var(--c1);
+    /* font-size: 3rem; */
+    max-width: 25rem;
+}
+.contact_bottom_list{
+    /* border: 0.1rem solid black; */
+}
+.contact_bottom_list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.contact_bottom_list ul li:first-child{
+    color: var(--c1);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.contact_bottom_list ul li{
+    color: var(--c2);
+    font-size: 1rem;
+}
