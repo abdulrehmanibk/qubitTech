@@ -189,8 +189,10 @@
     .demo{
         width: 15rem;
     }
-    .item3, .item2, .item4, .item{
+    .item3, .item2, .item4{
         width: 90vw;
-        /* height: auto; */
+    }
+    .item{
+        min-width: 90vw;
     }
 }
